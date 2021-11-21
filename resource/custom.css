@@ -1,0 +1,70 @@
+/* 定义字体 */
+@font-face{
+    font-family: NANO;
+}
+
+@font-face {
+    font-family: 字魂55号-龙吟手书;
+}
+
+@font-face {
+    font-family: 漫画体;
+}
+
+@font-face {
+    font-family: Arial;
+}
+
+/* 使用字体 */
+
+.ManHuaFont{
+    font-family: 漫画体, serif;
+}
+
+.NanoFont{
+    font-family: NANO, serif;
+}
+
+.LongYinFont{
+    font-family: 字魂55号-龙吟手书, serif;
+}
+
+.ArialFont{
+    font-family: Arial, serif;
+}
+
+/* 自定义css */
+body{
+    background-image: url("./background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mainBox{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    height: 400px;
+}
+
+.row{
+    height: 100%;
+    width: 70%;
+}
+
+.input-group{
+    text-align: center;
+}
+
+.function{
+    /*-webkit-text-stroke: 1px white;*/
+    /*color: white;*/
+    /*filter: blur(2px);*/
+    opacity: 80%;
+    width: available ;
+}
+
+#mary{
+    height: 100px;
+}

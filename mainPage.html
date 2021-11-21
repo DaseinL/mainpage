@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DaseinL的主页</title>
+    <link rel="stylesheet" href="./resource/bootstrap.min.css">
+    <link rel="stylesheet" href="./resource/custom.css">
+<!--    <script src="./resource/bootstrap.min.js"></script>-->
+<!--    <script src="./resource/jquery-3.6.0.min.js"></script>-->
+    <script src="./resource/custom.js"></script>
+
+<!-- Live2d 导入js -->
+<!--    <link rel="stylesheet" type="text/css" href="./resource/waifu.css"/>-->
+</head>
+<body class="container">
+
+<div class="container mainBox">
+    <div class="row row-cols-1 align-items-center">
+        <div class="col text-center">
+            <a href="https://blackboard.durham.ac.uk/ultra/stream" target="_self">
+                <img src="./resource/mary.png" id="mary" alt="">
+            </a>
+        </div>
+        <div class="col">
+            <div class="text-center input-group">
+                <label for="keyword"></label>
+                <input type="text" class="form-control input-change ManHuaFont" placeholder="Fight for the dawn..." id="keyword" onchange="search1()"/>
+                <div class="input-group-append NanoFont">
+                    <a class="btn btn-primary" href="https://www.baidu.com/" target="_self" id="default-btn">Baidu</a>
+                    <a class="btn btn-primary" href="https://www.google.co.uk/" target="_self">Google</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="function ArialFont">
+                <a href="https://translate.google.com/" class="btn btn-primary " target="_self">
+                    <svg class="bi bi-chat-square-quote-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm7.194 2.766c.087.124.163.26.227.401.428.948.393 2.377-.942 3.706a.446.446 0 0 1-.612.01.405.405 0 0 1-.011-.59c.419-.416.672-.831.809-1.22-.269.165-.588.26-.93.26C4.775 7.333 4 6.587 4 5.667 4 4.747 4.776 4 5.734 4c.271 0 .528.06.756.166l.008.004c.169.07.327.182.469.324.085.083.161.174.227.272zM11 7.073c-.269.165-.588.26-.93.26-.958 0-1.735-.746-1.735-1.666 0-.92.777-1.667 1.734-1.667.271 0 .528.06.756.166l.008.004c.17.07.327.182.469.324.085.083.161.174.227.272.087.124.164.26.228.401.428.948.392 2.377-.942 3.706a.446.446 0 0 1-.613.01.405.405 0 0 1-.011-.59c.42-.416.672-.831.81-1.22z"/>
+                    </svg>
+                    <br>
+                    <p>Translate</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="function ArialFont">
+                <a href="https://mytimetable.durham.ac.uk/weekly/activities" class="btn btn-primary " target="_self">
+                    <svg class="bi bi-alarm" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 15A6 6 0 1 0 8 3a6 6 0 0 0 0 12zm0 1A7 7 0 1 0 8 2a7 7 0 0 0 0 14z"/>
+                        <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.053.224l-1.5 3a.5.5 0 1 1-.894-.448L7.5 8.882V5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"/>
+                        <path fill-rule="evenodd" d="M11.646 14.146a.5.5 0 0 1 .708 0l1 1a.5.5 0 0 1-.708.708l-1-1a.5.5 0 0 1 0-.708zm-7.292 0a.5.5 0 0 0-.708 0l-1 1a.5.5 0 0 0 .708.708l1-1a.5.5 0 0 0 0-.708zM5.5.5A.5.5 0 0 1 6 0h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+                        <path d="M7 1h2v2H7V1z"/>
+                    </svg>
+                    <br>
+                    <p>Timetable</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--&lt;!&ndash; Live2d 区块&ndash;&gt;-->
+<!--<div class="waifu">-->
+<!--    <div class="waifu-tips"></div>-->
+<!--    <canvas id="live2d" class="live2d"></canvas>-->
+<!--    <div class="waifu-tool">-->
+<!--        <span class="fui-home"></span>-->
+<!--        <span class="fui-chat"></span>-->
+<!--        <span class="fui-eye"></span>-->
+<!--        <span class="fui-user"></span>-->
+<!--        <span class="fui-photo"></span>-->
+<!--        <span class="fui-info-circle"></span>-->
+<!--        <span class="fui-cross"></span>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<script src="./resource/waifu-tips.js"></script>-->
+<!--<script src="./resource/live2d.js"></script>-->
+
+<!--<script type="text/javascript">-->
+<!--    live2d_settings['modelId'] = 1;-->
+<!--    live2d_settings['modelTexturesId'] = 87;-->
+<!--    initModel("https://www.example.com/path/to/waifu-tips.json")-->
+<!--</script>-->
+</body>
+</html>
